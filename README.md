@@ -50,11 +50,13 @@ Example for MSSQL
       -n, --no-write    Prevent writing the models to disk.
       -s, --schema      Database schema from which to retrieve tables
       -z, --typescript  Output models as typescript with a definitions file.
+      -j, --feathers-js Output models in FeathersJS format.
 
 ## Example
 
     sequelize-auto -o "./models" -d sequelize_auto_test -h localhost -u my_username -p 5432 -x my_password -e postgres
     node './bin/sequelize-auto' -o './bin/models' -d DataBaseName -h 127.0.0.1 -u root -p 3306 -x 1234 -e mysql
+    node './bin/sequelize-auto' -o './bin/models' -d DataBaseName -h 127.0.0.1 -u root -p 3306 -x 1234 -e mysql -j
 
 Produces a file/files such as ./models/Users.js which looks like:
 
